@@ -5,24 +5,53 @@
     --secondary-color: #7E2553;
     --hightlights-color:#FF004D;
     --highlights-color2: #FAEF5D;
-    --font-color: white;
-
+    --title-font: 'Montserrat', 'Reboto';
+    --main-font: 'Roboto', sans-serif;
+    --auxBack-color: white;
+    --aux-color:#FFA8C2;
     background-color: var(--primary-color);
 }
 
 .headerContainer{
     display:flex;
     width: 100%;
-    height: 70px;
-    background-color:var(--secondary-color);
+    height: 120px;
+    background-color:var(--hightlights-color);
     object-fit: contain;
+}
+.navContainer{
+
+    display: flex;
+    height: 50px;
+    background-color: var(--auxBack-color);
+    
+}
+#ulMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--auxBack-color);
+    list-style: none;
+}
+.liMenu{
+    align-items: center;
+    color: var(--primary-color);
+    background-color: var(--auxBack-color);
+    font-family: var(--title-font);
+    margin-left: 30px;
+    
+}
+#logoLuna{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    background-color: var(--auxBack-color);
+}
+.imgLuna{
+    background-color: var(--auxBack-color);
 }
 .imgLogo{
     object-fit: contain;
     width: 100%;
-    height: 70px;
-}
-#divRapLogo{
-
-
+    height: 120px;
 }
