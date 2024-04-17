@@ -9,7 +9,7 @@
     --main-font: 'Roboto', sans-serif;
     --auxBack-color: white;
     --aux-color:#FFA8C2;
-    background-color: var(--primary-color); /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
+    /* background-color: var(--primary-color); */ /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
 }
 
 .headerContainer{
@@ -55,3 +55,65 @@
     width: 100%;
     height: 120px;
 }
+
+/* Biblioteca */
+
+.biblioteca-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.main-bliblioteca-wrapper{
+    background-color: #FAEF5D;
+    width: 70%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 22px;
+    box-sizing: border-box;
+}
+
+.left-grid-container{
+    width: 38%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+.vinil-item{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.vinil-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    justify-content: start;
+}
+
+.right-info-title{
+
+}
+
+
+
