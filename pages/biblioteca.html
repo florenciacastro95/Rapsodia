@@ -13,12 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- aca hice una v2 del nav rojo, si no te gusta dejamos el anterior no hay drama, tene en cuenta que la imagen del vinilo tiene que ser png, porque la que intentaste usar era jpg -->
     <nav class="nav-container">
         <div class="rapsodia-logo-container">
             <img src="/assests/vinyl.png" alt="">
             <p class="rapsodia-logo">Rapsodia</p>
         </div>
     </nav>
+    <!-- hice una seccion grande, que ocupa el 100% del ancho y el 100vh MENOS LOS 50 PIXELES DEL NAV
+        eso es lo que podes que cuando le doy las dimensiones dice calc(100vh - 50px), hace un calculo y al 100vh le resta 50px.
+        Despues hice un contenedor grande para poder centrar todo al medio, que se llama biblioteca wrapper, y dentro de este le puse 2 hijos,
+        uno que tiene el grid con los items de grid que son los discos, y a la derecha una informacion sobre la biblioteca que tenemos que rellenar despues con texto
+        otro agregado es la clase red highlight, que sirve para darle color a algun detalle, como le di al signo de exclamacion
+    -->
     <section class="biblioteca-section"> 
         <div class="main-bliblioteca-wrapper">
             <div class="left-grid-container">
