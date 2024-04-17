@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     --primary-color: #1D2B53;
+    --secondary-bg:#1a1a1a;
     --secondary-color: #7E2553;
     --hightlights-color:#FF004D;
     --highlights-color2: #FAEF5D;
@@ -11,6 +12,11 @@
     --aux-color:#FFA8C2;
     /* background-color: var(--primary-color); */ /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
 }
+
+.red-hightlight{
+    color: var(--hightlights-color);
+}
+
 
 .headerContainer{
     display:flex;
@@ -64,11 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-bg);
 }
 
 .main-bliblioteca-wrapper{
-    background-color: #FAEF5D;
     width: 70%;
     height: 430px;
     display: flex;
@@ -107,12 +112,20 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 40px;
+    gap: 30px;
     justify-content: start;
 }
 
 .right-info-title{
+    font-size: 34px;
+    color: var(--auxBack-color);
+    font-family: var(--title-font);
+}
 
+.right-info-description{
+    font-size: 18px;
+    text-align: justify;
+    color: var(--auxBack-color);
 }
 
 
