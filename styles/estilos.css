@@ -9,7 +9,7 @@
     --main-font: 'Roboto', sans-serif;
     --auxBack-color: white;
     --aux-color:#FFA8C2;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
 }
 
 .headerContainer{
