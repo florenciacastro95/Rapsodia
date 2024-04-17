@@ -8,6 +8,7 @@
     --highlights-color2: #FAEF5D;
     --title-font: 'Montserrat', 'Reboto';
     --main-font: 'Roboto', sans-serif;
+    --logo-font:'Russo One';
     --auxBack-color: white;
     --aux-color:#FFA8C2;
     /* background-color: var(--primary-color); */ /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
@@ -62,11 +63,34 @@
     height: 120px;
 }
 
+/* navv2 */
+.nav-container{
+    height: 50px;
+    background-color: var(--hightlights-color);
+}
+.rapsodia-logo-container{
+    width: 350px;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rapsodia-logo-container img{
+    width: 40px;
+}
+.rapsodia-logo{
+    font-family: var(--logo-font);
+    color: var(--auxBack-color);
+}
+
+
 /* Biblioteca */
 
 .biblioteca-section{
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 50px);
     display: flex;
     align-items: center;
     justify-content: center;
