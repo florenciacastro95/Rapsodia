@@ -9,11 +9,13 @@
     --title-font: 'Montserrat', 'Reboto';
     --main-font: 'Roboto', sans-serif;
     --logo-font:'Russo One';
-    --auxBack-color: rgb(240, 231, 231);
+    --auxBack-color: white; /* rgb(240, 231, 231);*/
     --aux-color:#FFA8C2;
     /* background-color: var(--primary-color); */ /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
 }
-
+body{
+    background-color: var(--secondary-bg);
+}
 .red-hightlight{
     color: var(--hightlights-color);
 }
@@ -22,13 +24,12 @@
 .headerContainer{
     display:flex;
     width: 100%;
-    height: 55px;
+    height: 60px;
     background-color:var(--hightlights-color);
     object-fit: contain;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+
 }
 .navContainer{
 
@@ -39,7 +40,8 @@
 }
 #divRapLogo{
     background-color: var(--hightlights-color);
-    height: 85px;
+    height: 50px;
+    align-items: self-end;
 }
 #aLogo{ 
     background-color: var(--hightlights-color);  
@@ -47,21 +49,26 @@
 }
 .imgLogo{
     width: 100%;
-    height: 81px;
+    height: 46px;
     background-color: var(--hightlights-color);
 }
 /*CONTAINER NAV*/
 
-
+a{
+    text-decoration: none;
+    color: var(--secondary-bg);
+}
+a:hover{    
+    font-weight: bold;
+   
+}
 .navContainer{
 
     display: flex;
-    height: 30px;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--auxBack-color);
-    padding: 20px;
-    border-radius: 10px;
 
 }
 
@@ -82,7 +89,7 @@
     
 }
 #logoLuna {
-    height: 40px;
+    height: 50px    ;
     object-fit: contain ;
     align-self: flex-end;
     background-color: var(--auxBack-color);
@@ -94,8 +101,8 @@
 /*SECCION PRINCIPAL*/
 
 .sectionPrincipal{
-    background-color: var(--primary-color);
-    height: 300px;
+    background-color: var(--secondary-bg);
+    height: 200px;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -106,27 +113,31 @@
 .divContainer_tit_desc{
     display:block;
     background: var(--auxBack-color);
-    width: 48%;
-    height: 89%;
+    width: 38%;
+    height: 80%;
     padding: 18px;
     border-radius: 8px;
 }
 #divTitulo{    
     background-color: var(--auxBack-color);
+    height: 70%;
+    width: 50%;
 }
 .imgTitulo{
-    height: 40%;
-    width: 50%;
     background-color: var(--auxBack-color);
 }
 #divDescripcion{
     background-color: var(--auxBack-color);
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .divContainer_img{
-    width: 48%;
+    width: 28%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.divContainer_imgIndio{
+    width: 24%;
     height: 100%;
     border-radius: 10px;
 
@@ -134,8 +145,11 @@
 .ts{
     height: 100%;
     width: 100%;
-
-}
+    }
+.indio{
+    height: 100%;
+    width: 100%;
+   }
 
 /* navv2, aca estan todos los estilos del nav 2 */
 .nav-container{
@@ -158,9 +172,6 @@
     font-family: var(--logo-font);
     color: var(--auxBack-color);
 }
-
-
-
 
 /* Biblioteca,
 aca añadi un color que me parecio que puede quedar mas serio,
