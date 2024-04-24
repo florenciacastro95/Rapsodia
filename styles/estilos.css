@@ -102,7 +102,7 @@ a:hover{
 
 .sectionPrincipal{
     background-color: var(--secondary-bg);
-    height: 200px;
+    height: calc(100vh - 50px);
     width: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -243,4 +243,8 @@ que es el nefro casi gris este
 }
 
 /* nada mas, anashe */
+
+/* Carrousel section */
+
+
 
