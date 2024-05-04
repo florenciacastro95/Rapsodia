@@ -1,165 +1,181 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     --primary-color: #1D2B53;
-    --secondary-bg:#1a1a1a;
+    --secondary-bg: #1a1a1a;
     --secondary-color: #7E2553;
-    --hightlights-color:#FF004D;
+    --hightlights-color: #FF004D;
     --highlights-color2: #FAEF5D;
     --title-font: 'Montserrat', 'Reboto';
     --main-font: 'Roboto', sans-serif;
-    --logo-font:'Russo One';
-    --auxBack-color: white; /* rgb(240, 231, 231);*/
-    --aux-color:#FFA8C2;
-    /* background-color: var(--primary-color); */ /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
+    --logo-font: 'Russo One';
+    --auxBack-color: white;
+    /* rgb(240, 231, 231);*/
+    --aux-color: #FFA8C2;
+    /* background-color: var(--primary-color); */
+    /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
 }
-body{
+
+body {
     background-color: var(--secondary-bg);
 }
-.red-hightlight{
+
+.red-hightlight {
     color: var(--hightlights-color);
 }
-.yellow-highlight{
+
+.yellow-highlight {
     color: var(--highlights-color2);
 }
+
 /*CONTAINER ENCABEZADO*/
-.headerContainer{
-    display:flex;
+.headerContainer {
+    display: flex;
     width: 100%;
     height: 60px;
-    background-color:var(--hightlights-color);
+    background-color: var(--hightlights-color);
     object-fit: contain;
     justify-content: space-between;
     align-items: center;
 
 }
-.navContainer{
+
+.navContainer {
 
     display: flex;
     height: 50px;
     background-color: var(--auxBack-color);
-    
+
 }
-#divRapLogo{
+
+#divRapLogo {
     background-color: var(--hightlights-color);
     height: 50px;
     align-items: self-end;
 }
-#aLogo{ 
-    background-color: var(--hightlights-color);  
+
+#aLogo {
+    background-color: var(--hightlights-color);
     text-decoration: none;
 }
-.imgLogo{
+
+.imgLogo {
     width: 100%;
     height: 46px;
     background-color: var(--hightlights-color);
 }
+
 /*CONTAINER NAV*/
 
-a{
+a {
     text-decoration: none;
     color: var(--secondary-bg);
     transition: 0.5s ease;
 }
-a:hover{    
+
+a:hover {
     font-weight: bold;
-   
+
 }
-.navContainer{
+
+.navContainer {
 
     display: flex;
     height: 50px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--auxBack-color);
-
+    margin-bottom: 10px;
 }
 
-#ulMenu{
+#ulMenu {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: var(--auxBack-color);
     list-style: none;
 }
-.liMenu{
+
+.liMenu {
     align-items: center;
     color: var(--primary-color);
     background-color: var(--auxBack-color);
     font-family: var(--title-font);
-    margin-left:10px;
+    margin-left: 10px;
     margin-right: 20px;
-    
+
 }
+
 #logoLuna {
-    height: 50px    ;
-    object-fit: contain ;
+    height: 50px;
+    object-fit: contain;
     align-self: flex-end;
     background-color: var(--auxBack-color);
 }
-.imgLuna{
-        
+
+.imgLuna {
+
     background-color: var(--auxBack-color);
 }
+
 /*SECCION PRINCIPAL*/
 
-.sectionPrincipal{
+.sectionPrincipal {
     background-color: var(--secondary-bg);
-    height: calc(100vh - 50px);
+    height: calc(100vh - 335px);
     width: 100%;
     /* padding: 20px; */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
 }
+
 /*TITULO Y DESCRIPCION*/
-.divContainer_tit_desc{
-    display:block;
+.divContainer_tit_desc {
+    display: block;
     background: var(--auxBack-color);
     width: 38%;
-    height: 80%;
+    height: 260px;
     padding: 18px;
     border-radius: 8px;
 }
-#divTitulo{    
-    background-color: var(--auxBack-color);
-    height: 70%;
-    width: 50%;
-}
-.imgTitulo{
-    background-color: var(--auxBack-color);
-}
-#divDescripcion{
-    background-color: var(--auxBack-color);
-}
 
-.divContainer_img{
-    width: 28%;
-    height: 100%;
-    border-radius: 10px;
+#divDescripcion {
+    margin-top: 15px;
 
 }
-.divContainer_imgIndio{
-    width: 24%;
-    height: 100%;
-    border-radius: 10px;
 
-}
-.ts{
-    height: 300px;
+.imgTitulo {
+    margin-top: 10px;
+    height: 80px;
     width: 300px;
-    }
-.indio{
-    height: 300px;
-    width: 300px;
-   }
+    justify-content: center;
+}
+
+.section-title {
+    font-family: var(--title-font);
+    color: var(--secondary-bg);
+    font-size: 28px;
+
+}   
+
+.ts {
+    height: auto;
+    width: 30%;
+}
+
+.indio {
+    height: auto;
+    width: 30%;
+}
 
 /* navv2, aca estan todos los estilos del nav 2 */
-.nav-container{
+.nav-container {
     height: 50px;
     background-color: var(--hightlights-color);
 }
-.rapsodia-logo-container{
+
+.rapsodia-logo-container {
     width: 350px;
     height: 100%;
     margin-left: 10px;
@@ -168,10 +184,11 @@ a:hover{
     gap: 20px;
 }
 
-.rapsodia-logo-container img{
+.rapsodia-logo-container img {
     width: 40px;
 }
-.rapsodia-logo{
+
+.rapsodia-logo {
     font-family: var(--logo-font);
     color: var(--auxBack-color);
 }
@@ -181,7 +198,7 @@ aca añadi un color que me parecio que puede quedar mas serio,
 que es el nefro casi gris este
 */
 
-.biblioteca-section{
+.biblioteca-section {
     width: 100%;
     height: calc(100vh - 50px);
     display: flex;
@@ -190,18 +207,20 @@ que es el nefro casi gris este
     background-color: var(--secondary-bg);
 }
 
-.main-bliblioteca-wrapper{
+.main-bliblioteca-wrapper {
     width: 70%;
     height: 430px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;/* la propiedad gap sirve en flex y grid, sirve para dar espacio entre los hijos del padre que tiene el layout */
+    gap: 20px;
+    /* la propiedad gap sirve en flex y grid, sirve para dar espacio entre los hijos del padre que tiene el layout */
     padding: 22px;
-    box-sizing: border-box;/* esto es para que al darle padding al contenedor de todo, no se agrande, sino que a partir del tamaño definido haga el padding sin modificar el tamaño */
+    box-sizing: border-box;
+    /* esto es para que al darle padding al contenedor de todo, no se agrande, sino que a partir del tamaño definido haga el padding sin modificar el tamaño */
 }
 
-.left-grid-container{
+.left-grid-container {
     width: 38%;
     height: 100%;
     display: grid;
@@ -210,20 +229,22 @@ que es el nefro casi gris este
     gap: 0px;
 }
 
-.vinil-item{
+.vinil-item {
     width: 60px;
     height: 60px;
     border-radius: 8px;
-    overflow: hidden; /* esto sirve para que si las imagenes se desbordan del contenedor de la imagen, se adapte al contenedor, esto sirve para que en la imagen se vea el border radius, de otra forma no se ve */
+    overflow: hidden;
+    /* esto sirve para que si las imagenes se desbordan del contenedor de la imagen, se adapte al contenedor, esto sirve para que en la imagen se vea el border radius, de otra forma no se ve */
 }
 
-.vinil-item img{
+.vinil-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* centra la imagen en el contenedor */
+    object-fit: cover;
+    /* centra la imagen en el contenedor */
 }
 
-.right-info{
+.right-info {
     width: 50%;
     height: 100%;
     display: flex;
@@ -233,13 +254,13 @@ que es el nefro casi gris este
     justify-content: start;
 }
 
-.right-info-title{
+.right-info-title {
     font-size: 34px;
     color: var(--auxBack-color);
     font-family: var(--title-font);
 }
 
-.right-info-description{
+.right-info-description {
     font-size: 18px;
     text-align: justify;
     color: var(--auxBack-color);
@@ -249,7 +270,7 @@ que es el nefro casi gris este
 
 /* Carrousel section */
 
-.gal-section{
+.gal-section {
     margin-top: 100px;
     box-sizing: border-box;
     width: 100%;
@@ -258,25 +279,26 @@ que es el nefro casi gris este
     justify-content: center;
     flex-direction: column;
 }
-.gal-section-title{
+
+.gal-section-title {
     font-family: var(--title-font);
     color: var(--auxBack-color);
     font-size: 42px;
 
 }
 
-.g-flex-container{
+.g-flex-container {
     display: flex;
     padding: 45px;
     flex-wrap: wrap;
 }
 
-.columna{
+.columna {
     flex: 30%;
     padding: 5px;
 }
 
-.columna img{
+.columna img {
     width: 100%;
     margin-top: 5px;
 }
@@ -285,16 +307,42 @@ que es el nefro casi gris este
 
 @media (max-width: 800px) {
 
-    .columna{
+    .columna {
         flex: 50%;
     }
-    
+
 }
 
 @media (max-width: 600px) {
 
-    .columna{
+    .columna {
         flex: 100%;
     }
-    
+
+}
+
+@media (max-width: 800px) {
+    .sectionPrincipal {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 400px;
+        width: 100%;
+        height: 680px;
+    }
+
+    .divContainer_tit_desc {
+        width: 70%;
+        background-color: var(--auxBack-color);
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .ts,
+    .indio {
+        width: 65%;
+        height: auto;
+        max-width: 100%;
+    }
 }
