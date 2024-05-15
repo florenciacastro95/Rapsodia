@@ -404,13 +404,6 @@ que es el nefro casi gris este
     height: 100vh;
 }
 
-.a-right-info{
-    width: 50%;
-    height: 100%;
-}
-
-/* Sección del artista */
-
 .a-left-info {
     position: relative;
     width: 60%;
@@ -418,7 +411,6 @@ que es el nefro casi gris este
     overflow: hidden;
 }
 
-/* Imagen de fondo */
 .bg-img-container {
     position: absolute;
     width: 100%;
@@ -431,49 +423,82 @@ que es el nefro casi gris este
     object-fit: cover;
 }
 
-/* Descripción del artista */
 .artist-description {
     position: absolute;
     top: 30px;
     left: 60%;
-    color: white;
+    color: var(--auxBack-color);
     z-index: 1;
 }
 
 .artist-name {
-    font-size: 3em;
-    margin: 0;
+    font-size: 52px;
+    font-family: var(--title-font);
 }
 
 .artist-desciption {
-    font-size: 1.5em;
+    font-size: 20px;
     margin: 10px 0;
+    font-family: var(--main-font);
 }
 
 .explore-btn {
     padding: 10px 20px;
     background-color: #E26001;
     border: none;
+    border-radius: 6px;
     color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
 .explore-btn:hover {
-    background-color: #ff6b81;
+    background-color: #ff6a00;
 }
 
-.cd-link {
-    display: block;
-    margin-bottom: 20px;
+.a-right-info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary-bg);
 }
 
-.cd-img {
-    width: 100%;
-    height: auto;
+.cd-link img{
+    width: 300px;
+    height: 300px;
 }
 
-.cd-description {
-    font-size: 1em;
-    color: #333;
+.cd-card{
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artist-last{
+    font-size: 40px;
+    font-family: var(--main-font);
+    color: var(--auxBack-color);
+}
+
+.cd-title{
+    font-size: 30px;
+    font-family: var(--title-font);
+    color: var(--auxBack-color);
+}
+
+.cd-description{
+    text-align: start;
+    font-family: var(--main-font);
+    color: rgb(156, 156, 156);
+    font-size: 16px;
 }
