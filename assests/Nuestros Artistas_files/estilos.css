@@ -398,8 +398,18 @@ que es el nefro casi gris este
 }
 
 /* estilos artistas */
-.artist-section {
-    display: flex;
+
+.artist-section{
+    width: 100%;
+    height: 100vh;
+}
+
+.a-left-info{
+    width: 50%;
+    height: 100%;
+}
+
+#left-img{
     width: 100%;
     height: 100vh;
 }
@@ -407,73 +417,4 @@ que es el nefro casi gris este
 .a-right-info{
     width: 50%;
     height: 100%;
-}
-
-/* Sección del artista */
-
-.a-left-info {
-    position: relative;
-    width: 60%;
-    height: 100%;
-    overflow: hidden;
-}
-
-/* Imagen de fondo */
-.bg-img-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.bg-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Descripción del artista */
-.artist-description {
-    position: absolute;
-    top: 30px;
-    left: 60%;
-    color: white;
-    z-index: 1;
-}
-
-.artist-name {
-    font-size: 3em;
-    margin: 0;
-}
-
-.artist-desciption {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.explore-btn {
-    padding: 10px 20px;
-    background-color: #E26001;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.explore-btn:hover {
-    background-color: #ff6b81;
-}
-
-.cd-link {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.cd-img {
-    width: 100%;
-    height: auto;
-}
-
-.cd-description {
-    font-size: 1em;
-    color: #333;
 }
