@@ -12,10 +12,12 @@
     --auxBack-color: white;
     /* rgb(240, 231, 231);*/
     --aux-color: #FFA8C2;
-    /* background-color: var(--primary-color); */
-    /* deberiamos cambiar esto por un tema de especificidad, a veces puede molestar */
 }
 
+body{
+
+    background-color: var(--secondary-bg);
+}
 
 .red-hightlight {
     color: var(--hightlights-color);
