@@ -13,12 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- aca hice una v2 del nav rojo, si no te gusta dejamos el anterior no hay drama, tene en cuenta que la imagen del vinilo tiene que ser png, porque la que intentaste usar era jpg -->
-    <nav class="nav-container">
-        <div class="rapsodia-logo-container">
-            <img src="/assests/vinyl.png" alt="">
-            <p class="rapsodia-logo">Rapsodia</p>
+    <!-- Copio nav del index aquí -->
+    <nav class="navContainer">
+        <ul id="ulMenu">
+            <a href="pages/artistas.html">
+                <li class="liMenu">
+                    Nuestros Artistas
+                </li>
+            </a>
+            <a href="pages/biblioteca.html">
+                <li class="liMenu">
+                    Discografías y biografías
+                </li>
+            </a>
+            <a href="pages/listas.html">
+                <li class="liMenu">
+                    Listas
+                </li>
+            </a>
+            <li class="liMenu">Oldie but goldie</li>
+        </ul>
+        <div id="logoLuna">
+            <img class="imgLuna" src="assests/moon_icon.png">
         </div>
+        
     </nav>
     <!-- hice una seccion grande, que ocupa el 100% del ancho y el 100vh MENOS LOS 50 PIXELES DEL NAV
         eso es lo que podes que cuando le doy las dimensiones dice calc(100vh - 50px), hace un calculo y al 100vh le resta 50px.
