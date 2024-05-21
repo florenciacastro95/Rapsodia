@@ -13,40 +13,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="headerContainer">
 
-        <div id="divRapLogo">
-            <a id="aLogo" href="../index.html">
-                <img class="imgLogo" src="../assests/RapsodiaLogoInv.png">
+    <nav class="nav-wrapper">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../assests/RapsodiaLogoInv.png" alt="">
             </a>
         </div>
-        <div id="divRedesLog"></div>
-    </header>
-    <!-- Copio el nav del index aquí -->
-    <nav class="navContainer">
-        <ul id="ulMenu">
-            <a href="artistas.html">
-                <li class="liMenu">
-                    Nuestros Artistas
-                </li>
-            </a>
-            <a href="biblioteca.html">
-                <li class="liMenu">
-                    Discografías y biografías
-                </li>
-            </a>
-            <a href="listas.html">
-                <li class="liMenu">
-                    Listas
-                </li>
-            </a>
-            <li class="liMenu">Oldie but goldie</li>
-        </ul>
-        <div id="logoLuna">
-            <img class="imgLuna" src="../assests/moon_icon.png">
+        <div class="right-nav-list">
+            <ul class="li-wrap">
+                <a href="../index.html">
+                    <li class="item-li">
+                        lobby
+                    </li>
+                </a>
+                <a href="listas.html">
+                    <li class="item-li">
+                        Listas
+                    </li>
+                </a>
+                <a href="../pages/listas.html">
+                    <li class="item-li">
+                        Nuestros Artistas
+                    </li>
+                </a>
+            </ul>
         </div>
-        
     </nav>
+
     <!-- hice una seccion grande, que ocupa el 100% del ancho y el 100vh MENOS LOS 50 PIXELES DEL NAV
         eso es lo que podes que cuando le doy las dimensiones dice calc(100vh - 50px), hace un calculo y al 100vh le resta 50px.
         Despues hice un contenedor grande para poder centrar todo al medio, que se llama biblioteca wrapper, y dentro de este le puse 2 hijos,
