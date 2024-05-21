@@ -98,6 +98,10 @@ body{
     justify-content: end;
     margin-right: 28px;
 }
+.li-wrap a{
+    text-decoration: none;
+}
+
 .right-nav-list{
     width: 70%;
 
@@ -105,9 +109,11 @@ body{
 .item-li{
     color: white;
     list-style: none;
-    font-family: var(--main-font);
+    font-family: var(--title-font);
     font-size: 18px;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .item-li:hover{
