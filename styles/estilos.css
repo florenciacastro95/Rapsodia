@@ -32,90 +32,49 @@ body{
     display: flex;
     width: 100%;
     height: 60px;
-    background-color: var(--hightlights-color);
+    background-color: var(--secondary-bg);
     object-fit: contain;
-    justify-content: space-between;
     align-items: center;
-
 }
-
-.navContainer {
-
-    display: flex;
-    height: 50px;
-    background-color: var(--auxBack-color);
-
-}
-
-#divRapLogo {
-    background-color: var(--hightlights-color);
-    height: 50px;
-    align-items: self-end;
-}
-
-#aLogo {
-    background-color: var(--hightlights-color);
-    text-decoration: none;
-}
-
 .imgLogo {
     width: 100%;
     height: 46px;
-    background-color: var(--hightlights-color);
-}
-
-/*CONTAINER NAV*/
-
-a {
-    text-decoration: none;
-    color: var(--secondary-bg);
-    transition: 0.5s ease;
-}
-
-a:hover {
-    font-weight: bold;
-
 }
 
 .navContainer {
-
-    display: flex;
+    width: 100%;
     height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--auxBack-color);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-#ulMenu {
+.ulMenu{
+    width: 100%;
+    height: 50px;
     display: flex;
+    gap: 28px;
     align-items: center;
-    justify-content: flex-start;
-    background-color: var(--auxBack-color);
+    justify-content: center;
+}
+
+.ulMenu a{
+    text-decoration: none;
+}
+
+  
+
+.liMenu{
     list-style: none;
-}
-
-.liMenu {
-    align-items: center;
-    color: var(--primary-color);
-    background-color: var(--auxBack-color);
+    color: white;
     font-family: var(--title-font);
-    margin-left: 10px;
-    margin-right: 20px;
-
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-#logoLuna {
-    height: 50px;
-    object-fit: contain;
-    align-self: flex-end;
-    background-color: var(--auxBack-color);
+.liMenu:hover{
+    color: var(--hightlights-color);
 }
 
-.imgLuna {
-
-    background-color: var(--auxBack-color);
-}
 
 /* v2nav */
 
@@ -148,6 +107,7 @@ a:hover {
     list-style: none;
     font-family: var(--main-font);
     font-size: 18px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .item-li:hover{
