@@ -537,3 +537,23 @@ que es el nefro casi gris este
     color: rgb(156, 156, 156);
     font-size: 16px;
 }
+.next-artist-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--highlights-color);
+    color: var(--hightlights-color);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.next-artist-btn:hover {
+    background-color: rgba(100,100,100, 0.5);
+    color: white;
+}
