@@ -27,7 +27,7 @@ formulario.addEventListener('submit', function(e){
     if((nombre.value.length < 6 || nombre.value.length > 10) || !expresionNombre.test(nombre.value)){
         errores += `El nombre de usuario no es valido, 
         debe tener una longitud entre 6 y 10 y solo admite guiones, 
-        puntos y minúsculas`
+        puntos y minúsculas <br>`
         validacion=false;
     }
 
@@ -43,15 +43,15 @@ formulario.addEventListener('submit', function(e){
     if((pass.value.length < 8) || !expresionPass.test(pass.value)){
         errores += `Contraseña inválida. La contraseña debe tener 
         mínimo 8 caracteres, y debe contener al menos una mayúscula,
-        una minúscula, un número y un símbolo especial`;
+        una minúscula, un número y un símbolo especial <br>`;
         validacion=false;
     }
     
     /*VALIDACION PASSWORD IGUAL A SU CONFIRMACION*/
 
-    if(passConf.value != pass.value){
+    if(confPass.value != pass.value){
 
-        errores+=`Las contraseñas no coinciden`;
+        errores+=`Las contraseñas no coinciden <br>`;
         validacion=false;
     }
 
@@ -59,7 +59,7 @@ formulario.addEventListener('submit', function(e){
 
     if((tel.value.length>20 || tel.value.length<11) || !expresionTel.test(tel.value)){
         errores+= `Telefono inválido, solo puede contener números. Longitud máxima de 21
-        y longitud mínima de 11`;
+        y longitud mínima de 11 <br>`;
         validacion=false;
     }
 
