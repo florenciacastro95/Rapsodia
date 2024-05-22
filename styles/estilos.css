@@ -216,8 +216,16 @@ body{
     align-items: center;
     justify-content: center;
     background-color: none;
-    transition: 0.2s ease ;
+    opacity: 0; 
+    transform: translateX(-100%); /* se van los componentes hacia afuera izq */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
+.component.animate {
+    opacity: 1; 
+    transform: translateX(0); /* vuelven a donde tienen que estar */
+}
+
+
 .component img{
     box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.2);
 }
@@ -266,8 +274,6 @@ body{
     letter-spacing: 2px;
 
 }
-
-
 
 
 
