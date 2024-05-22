@@ -1,7 +1,15 @@
 
 
-artistBtn = document.getElementById('next-artist-btn');
 
+
+
+
+
+
+
+
+/* Funcionalidad de boton artistas */
+let artistBtn = document.getElementById('next-artist-btn');
 
 artistBtn.addEventListener('click', function() {
     let sectionArtistas = document.querySelectorAll('.main-wrapper');
