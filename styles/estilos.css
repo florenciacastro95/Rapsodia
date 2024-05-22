@@ -275,7 +275,52 @@ body{
 
 }
 
+.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.landing-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.landing-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: var(--title-font);
+}
+
+.landing-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: var(--main-font);
+}
+
+.landing-button {
+    width: 150px;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: white;
+    font-family: var(--title-font);
+    background: linear-gradient(to right, #1D2B53, #FF004D);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.landing-button:hover {
+    background: linear-gradient(to right, #2a3f78, #ff2c6c);
+}
 
 
 
