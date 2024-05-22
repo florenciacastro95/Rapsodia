@@ -572,8 +572,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #615ca1;
+    background: linear-gradient(to right, #1D2B53, #FF004D);
+}
 
+#formnav{
+    background: linear-gradient(to right, #1D2B53, #FF004D);
 }
 
 .form-wrapper{
@@ -586,7 +589,8 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 22px;
-    background-color: #C3436E;
+    background-color: var(--auxBack-color);
+    box-shadow: 3px 3px 3px rgb(255, 255, 255, 0.5 );
 }
 
 #form{
@@ -602,7 +606,6 @@ body{
 .form-component{
     width: 100%;
     height: 40px;
-    background-color: aqua ;
 }
 
 .form-label{
@@ -613,4 +616,34 @@ body{
 .form-input{
     width: 100%;
     height: 20px;
+    background-color: none;
+    border: none;
+    padding: 4px 4px 4px 2px;
+    border-bottom: 1px solid gray;
+    color: var(--primary-color);
+}
+
+.form-input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--aux-color);
+
+}
+
+#subButton{
+    width: 170px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-family: var(--main-font);
+    padding: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 6px;
+    background: linear-gradient(to right, #1D2B53, #FF004D);
+    transition:  0.3s ease-in-out;
+}
+
+#subButton:hover{
+    scale: 1.3;
+    background: linear-gradient(to left, #1D2B53, #FF004D);
 }
