@@ -15,7 +15,7 @@ formulario.addEventListener('submit', function(e){
 
     let expresionNombre = /^[a-z0-9._-]+$/;
     let expresionEmail=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}$/;
-    let expresionPass =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]$/
+    let expresionPass =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.,;:])[A-Za-z\d@$!%*?&.,;:]{8,}$/;
     let expresionTel = /^\d+$/;
     
     let validacion = true;
@@ -23,12 +23,22 @@ formulario.addEventListener('submit', function(e){
 
     e.preventDefault(); 
 
+    /*RESETEAR LOS INPUTS CON ERRORES*/
+
+    let limpiarInputs = document.querySelectorAll('.form-input');
+    for (let index = 0; index < limpiarInputs.length; index++) {
+        limpiarInputs[index].classList.remove('errorInput');
+        
+    }
+    errors.innerHTML=errores;
+
     /*VALIDACION CAMPO NOMBRE*/
     if((nombre.value.length < 6 || nombre.value.length > 10) || !expresionNombre.test(nombre.value)){
         errores += `El nombre de usuario no es valido, 
         debe tener una longitud entre 6 y 10 y solo admite guiones, 
         puntos y minúsculas <br>`
         validacion=false;
+        nombre.classList.add('errorInput');
     }
 
     /*VALIDACION CAMPO E-MAIL*/
@@ -36,6 +46,7 @@ formulario.addEventListener('submit', function(e){
     if(!expresionEmail.test(email.value)){
         errores+= `Email inválido`;
         validacion=false;
+        email.classList.add('errorInput');
     }
 
     /*VALIDACION PASSWORD*/ 
@@ -45,6 +56,7 @@ formulario.addEventListener('submit', function(e){
         mínimo 8 caracteres, y debe contener al menos una mayúscula,
         una minúscula, un número y un símbolo especial <br>`;
         validacion=false;
+        pass.classList.add('errorInput');
     }
     
     /*VALIDACION PASSWORD IGUAL A SU CONFIRMACION*/
@@ -53,14 +65,15 @@ formulario.addEventListener('submit', function(e){
 
         errores+=`Las contraseñas no coinciden <br>`;
         validacion=false;
+        confPass.classList.add('errorInput');
     }
 
     /*VALIDACION TELEFONO*/
 
     if((tel.value.length>20 || tel.value.length<11) || !expresionTel.test(tel.value)){
-        errores+= `Telefono inválido, solo puede contener números. Longitud máxima de 21
-        y longitud mínima de 11 <br>`;
+        errores+= `Teléfono inválido. Solo puede contener números y debe tener una longitud entre 11 y 20 caracteres.<br>`;
         validacion=false;
+        tel.classList.add('errorInput');
     }
 
     if(validacion==false){
