@@ -205,12 +205,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 32px;
 }
 .component{
     width: 60%;
     height: 500px;
     padding: 20px;
-    margin: 30px 0px 0px 0px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -237,10 +237,12 @@ body{
 }
 
 .cd-com-title{
+    max-width: 400px;
     font-size: 36px;
     font-family: var(--title-font);
     color: var(--auxBack-color);
     letter-spacing: 6px;
+    text-wrap: wrap;
 }
 .cd-autor{
     font-family: var(--main-font);
@@ -253,8 +255,10 @@ body{
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
+    margin-left: 140px;
+    align-items: start;
     justify-content: center;
+    flex-direction: column;
 }
 .component-description{
     color: var(--auxBack-color);
