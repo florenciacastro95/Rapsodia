@@ -196,10 +196,84 @@ body{
     color: var(--auxBack-color);
 }
 
-/* Biblioteca,
-aca añadi un color que me parecio que puede quedar mas serio,
-que es el nefro casi gris este
-*/
+/* Biblioteca,*/
+
+.biblioteca-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.component{
+    width: 60%;
+    height: 500px;
+    padding: 20px;
+    margin: 30px 0px 0px 0px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    transition: 0.2s ease ;
+}
+.component img{
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+.component:hover{
+    scale: 1.05;
+}
+
+.left-component-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cd-com-title{
+    font-size: 36px;
+    font-family: var(--title-font);
+    color: var(--auxBack-color);
+    letter-spacing: 6px;
+}
+.cd-autor{
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: var(--auxBack-color);
+    font-weight: bold;
+}
+
+.right-component-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.component-description{
+    color: var(--auxBack-color);
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* nada mas, anashe */
 
