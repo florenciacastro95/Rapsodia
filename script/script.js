@@ -5,9 +5,6 @@
 
 
 
-
-
-
 /* Funcionalidad de boton artistas */
 let artistBtn = document.getElementById('next-artist-btn');
 

@@ -575,13 +575,18 @@ body{
     background: linear-gradient(to right, #1D2B53, #FF004D);
 }
 
+.form-title{
+    font-size: 26px;
+    font-family: var(--title-font);
+}
+
 #formnav{
     background: linear-gradient(to right, #1D2B53, #FF004D);
 }
 
 .form-wrapper{
     width: 350px;
-    height: 500px;
+    height: 550px;
     padding: 16px;
     box-sizing: border-box;
     border-radius: 16px;
@@ -611,6 +616,7 @@ body{
 .form-label{
     display: block;
     font-family: var(--main-font);
+    margin-bottom: 8px;
 }
 
 .form-input{
@@ -621,17 +627,20 @@ body{
     padding: 4px 4px 4px 2px;
     border-bottom: 1px solid gray;
     color: var(--primary-color);
+    font-size: 18px;
+    font-family: var(--title-font);
 }
 
 .form-input:focus{
     outline: none;
-    border-bottom: 2px solid var(--aux-color);
+    border-bottom: 2px solid #FF004D;
 
 }
 
 #subButton{
     width: 170px;
     height: 40px;
+    margin: auto;
     border: none;
     color: white;
     font-family: var(--main-font);
