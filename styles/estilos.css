@@ -615,7 +615,7 @@ body{
 
 .registro-section{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 636px;
     display: flex;
     align-items: start;
     justify-content: center;
