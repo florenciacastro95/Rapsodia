@@ -34,9 +34,7 @@ formulario.addEventListener('submit', function(e){
 
     /*VALIDACION CAMPO NOMBRE*/
     if((nombre.value.length < 6 || nombre.value.length > 10) || !expresionNombre.test(nombre.value)){
-        errores += `El nombre de usuario no es valido, 
-        debe tener una longitud entre 6 y 10 y solo admite guiones, 
-        puntos y minúsculas <br>`
+        errores += `El nombre de usuario no es valido <br>`
         validacion=false;
         nombre.classList.add('errorInput');
     }
@@ -44,7 +42,7 @@ formulario.addEventListener('submit', function(e){
     /*VALIDACION CAMPO E-MAIL*/
     
     if(!expresionEmail.test(email.value)){
-        errores+= `Email inválido`;
+        errores+= `Email inválido <br>`;
         validacion=false;
         email.classList.add('errorInput');
     }
@@ -52,9 +50,7 @@ formulario.addEventListener('submit', function(e){
     /*VALIDACION PASSWORD*/ 
 
     if((pass.value.length < 8) || !expresionPass.test(pass.value)){
-        errores += `Contraseña inválida. La contraseña debe tener 
-        mínimo 8 caracteres, y debe contener al menos una mayúscula,
-        una minúscula, un número y un símbolo especial <br>`;
+        errores += `Contraseña inválida.<br>`;
         validacion=false;
         pass.classList.add('errorInput');
     }
@@ -71,7 +67,7 @@ formulario.addEventListener('submit', function(e){
     /*VALIDACION TELEFONO*/
 
     if((tel.value.length>20 || tel.value.length<11) || !expresionTel.test(tel.value)){
-        errores+= `Teléfono inválido. Solo puede contener números y debe tener una longitud entre 11 y 20 caracteres.<br>`;
+        errores+= `Teléfono inválido <br>`;
         validacion=false;
         tel.classList.add('errorInput');
     }

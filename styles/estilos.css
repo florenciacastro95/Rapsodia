@@ -634,7 +634,7 @@ body{
 
 .form-wrapper{
     width: 350px;
-    height: 490px;
+    height: 590px;
     padding: 16px;
     box-sizing: border-box;
     border-radius: 16px;
@@ -687,7 +687,7 @@ body{
 
 #subButton{
     width: 170px;
-    height: 40px;
+    height: 60px;
     margin: auto;
     border: none;
     color: white;
@@ -708,4 +708,12 @@ body{
 .errorInput{border: 2px solid;
     border-color:red;
     
+}
+
+#errosContainer{
+    width: 100%;
+    height: 140px;
+    text-align: start;
+    font-family: var(--main-font);
+    color: red;
 }
