@@ -619,7 +619,7 @@ body{
     display: flex;
     align-items: start;
     justify-content: center;
-    background: linear-gradient(to right, #1D2B53, #FF004D);
+    background-color: var(--secondary-bg);
 }
 
 .form-title{
@@ -627,14 +627,12 @@ body{
     font-family: var(--title-font);
 }
 
-#formnav{
-    background: linear-gradient(to right, #1D2B53, #FF004D);
-}
+
 
 
 .form-wrapper{
     width: 350px;
-    height: 590px;
+    height: 620px;
     padding: 16px;
     box-sizing: border-box;
     border-radius: 16px;
@@ -687,8 +685,8 @@ body{
 
 #subButton{
     width: 170px;
-    height: 60px;
-    margin: auto;
+    height: 50px;
+    margin: 0 auto 50px;
     border: none;
     color: white;
     font-family: var(--main-font);

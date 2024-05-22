@@ -9,9 +9,9 @@ formulario.addEventListener('submit', function(e){
     let pass = document.getElementById('passInput');
     let confPass = document.getElementById('passConfInput');
     let tel = document.getElementById('telInput');
-    
     let errors = document.getElementById('errosContainer');
     let errores = '';
+    let users = document.getElementById('users-info');
 
     let expresionNombre = /^[a-z0-9._-]+$/;
     let expresionEmail=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}$/;
@@ -76,6 +76,11 @@ formulario.addEventListener('submit', function(e){
         errors.innerHTML=errores;
     }
 
+    if(validacion){
+        let cont = document.createElement('p');
+        cont.innerHTML=`Hola! ${nombre.value}, se te envia un mail de confirmacion a ${email.value}`
+        users.appendChild(cont);
+    }
 
 
 
