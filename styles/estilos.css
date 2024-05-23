@@ -710,8 +710,9 @@ body{
 
 #errosContainer{
     width: 100%;
-    height: 140px;
+    height:fit-content;
     text-align: start;
     font-family: var(--main-font);
     color: red;
+
 }
