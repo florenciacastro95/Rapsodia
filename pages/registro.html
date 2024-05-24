@@ -28,32 +28,30 @@
             <h1 class="form-title">Crea tu cuenta!</h1>
             <form action="" id="form">
                 <div class="form-component">
-                    <label class="form-label">Nombre de usuario:</label>
+                    <label class="form-label" data-tooltip="Debe contener solo letras y números.">Nombre de usuario:</label>
                     <input type="text" id="nombreInput" class="form-input">
                 </div>
                 <div class="form-component">
-                    <label class="form-label">Email:</label>
+                    <label class="form-label" data-tooltip="Debe ser un correo electrónico válido.">Email:</label>
                     <input type="email" id="emailInput" class="form-input">
                 </div>
                 <div class="form-component">
-                    <label class="form-label">Contraseña:</label>
+                    <label class="form-label" data-tooltip="Debe tener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula, un número y un carácter especial.">Contraseña:</label>
                     <input type="password" id="passInput" class="form-input">
                 </div>
                 <div class="form-component">
-                    <label class="form-label">Confirmar contraseña:</label>
+                    <label class="form-label" data-tooltip="Debe coincidir con la contraseña.">Confirmar contraseña:</label>
                     <input type="password" id="passConfInput" class="form-input">
                 </div>
                 <div class="form-component">
-                    <label class="form-label">Teléfono:</label>
+                    <label class="form-label" data-tooltip="Debe ser un número de teléfono válido.">Teléfono:</label>
                     <input type="tel" id="telInput" class="form-input">
                 </div>
                 <div id="errosContainer"></div>
                 <button type="submit" id="subButton">Registrarse</button>
             </form>
-            
         </div>
         <div id="users-info"></div>
-
     </section>
     
 </body>

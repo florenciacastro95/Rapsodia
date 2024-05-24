@@ -79,6 +79,7 @@ formulario.addEventListener('submit', function(e){
     if(validacion){
         let cont = document.createElement('p');
         cont.innerHTML=`Hola! ${nombre.value}, se te envia un mail de confirmacion a ${email.value}`
+        cont.classList.add('user')
         users.appendChild(cont);
     }
 
