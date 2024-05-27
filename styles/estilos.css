@@ -13,6 +13,9 @@
     /* rgb(240, 231, 231);*/
     --aux-color: #FFA8C2;
 }
+html {
+    scroll-behavior: smooth; /* Agrega una transición suave al desplazarse */
+}
 
 body{
 
@@ -164,6 +167,63 @@ body{
 
 #siguiente {
     right: 0;
+}
+
+/* landing */
+.landing{
+
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-landing{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; 
+}
+.right-landing{
+    width: 20%;
+}
+
+.landing-title{
+    font-size: 70px;
+    font-family: var(--title-font);
+    color: var(--auxBack-color);
+    letter-spacing: 4px;
+    align-self: center;
+}
+.landing-description{
+    font-size: var(30px);
+    max-width: 750px;
+    font-family: var(--main-font);
+    color: rgb(156, 156, 156);
+    align-self: center;
+}
+
+.landing-btn {
+    display: inline-block;
+    background-color: var(--hightlights-color);
+    font-family: var(--title-font);
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.9s ease; 
+    cursor: pointer;
+}
+
+.landing-btn:hover {
+    background-color: var(--highlights-color2); 
+    color: var(--secondary-bg);
 }
 
 
