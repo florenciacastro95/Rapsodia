@@ -6,35 +6,37 @@ document.addEventListener('DOMContentLoaded', function() {
         'assests/carrousel-img/img4.webp',
         'assests/carrousel-img/img5.jpg',
         'assests/carrousel-img/img6.webp'
-    ];
+    ]; //tiene todas las rutas de la carpeta que meti
 
-    let imagenVisible = 0;
+    let imagenVisible = 0; //tiene el index de la imagen que se esta viendo
     let carouselImg = document.getElementById('carousel-img');
     let antBtn = document.getElementById('anterior');
     let sigBtn = document.getElementById('siguiente');
 
-    // Mostrar la primera imagen al cargar la página
+    // carga la primera imagen al cargar la página
     carouselImg.src = imagenes[imagenVisible];
 
-    // Función para cambiar la imagen visible hacia adelante
+    //cambia el src de la img visible 
     function avanzar() {
         imagenVisible = (imagenVisible + 1) % imagenes.length;
         carouselImg.src = imagenes[imagenVisible];
     }
 
-    // Función para cambiar la imagen visible hacia atrás
+
     function retroceder() {
         imagenVisible = (imagenVisible - 1 + imagenes.length) % imagenes.length;
         carouselImg.src = imagenes[imagenVisible];
     }
 
-    // Escuchar clics en el botón de anterior
+    // depende el boton que presione llama a una u otra funcion
     antBtn.addEventListener('click', function() {
         retroceder();
     });
 
-    // Escuchar clics en el botón de siguiente
     sigBtn.addEventListener('click', function() {
         avanzar();
     });
+
+    //un saludo al profe que mira los comentarios :)))))))
+
 });
