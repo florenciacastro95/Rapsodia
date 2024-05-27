@@ -121,56 +121,45 @@ body{
 }
 
 
-/*SECCION PRINCIPAL*/
-
-.sectionPrincipal {
-    background-color: var(--secondary-bg);
-    height: calc(100vh - 335px);
-    width: 100%;
-    /* padding: 20px; */
-    border-radius: 10px;
+/*carousel*/
+#carrousel-container {
     display: flex;
-    justify-content: space-between;
-}
-
-/*TITULO Y DESCRIPCION*/
-.divContainer_tit_desc {
-    display: block;
-    background: var(--auxBack-color);
-    width: 38%;
-    height: 260px;
-    padding: 18px;
-    border-radius: 8px;
-}
-
-#divDescripcion {
-    margin-top: 15px;
-
-}
-
-.imgTitulo {
-    margin-top: 10px;
-    height: 80px;
-    width: 300px;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.section-title {
-    font-family: var(--title-font);
-    color: var(--secondary-bg);
-    font-size: 28px;
-
-}   
-
-.ts {
-    height: auto;
-    width: 30%;
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+#carousel img {
+    transition: 1s ease;
 }
 
-.indio {
-    height: auto;
-    width: 30%;
+#anterior, #siguiente {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
 }
+
+#anterior{
+    left: 0;
+}
+
+#siguiente {
+    right: 0;
+}
+
+
 
 /* navv2, aca estan todos los estilos del nav 2 */
 .nav-container {
