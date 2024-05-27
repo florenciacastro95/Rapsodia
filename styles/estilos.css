@@ -141,14 +141,21 @@ body{
     transition: 1s ease;
 }
 
-#anterior, #siguiente {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
+#anterior,
+#siguiente {
+  background-color: transparent;
+  border: none;
+  color: var(--hightlights-color); 
+  font-size: 32px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+#anterior:hover,
+#siguiente:hover {
+    color: var(--primary-color); 
 }
 
 #anterior{
