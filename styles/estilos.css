@@ -148,14 +148,15 @@ body{
     width: 100%;
 }
 .flecha{
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     background-color: rgb(156, 156, 156);
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     color: white;
+    
 }
 #anterior,
 #siguiente {
@@ -454,7 +455,6 @@ body{
     width: 80%;
     height: 400px;
     max-width: 1200px;
-    outline: coral 4px solid;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0;
