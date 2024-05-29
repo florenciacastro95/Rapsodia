@@ -136,28 +136,40 @@ body{
     overflow: hidden;
 }
 
+
 #carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 66%;
+    height: 70%;
 }
 #carousel img {
     transition: 1s ease;
+    width: 100%;
 }
-
+.flecha{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: white;
+}
 #anterior,
 #siguiente {
-  background-color: transparent;
+  
+  border-radius: 100px;
   border: none;
   color: var(--hightlights-color); 
   font-size: 32px;
-  padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
   transition: color 0.3s ease; 
 }
 
-#anterior:hover,
-#siguiente:hover {
+.flecha:hover {
     color: var(--primary-color); 
 }
 
@@ -173,11 +185,11 @@ body{
 .landing-index{
 
     width: 85%;
-    padding: 100px;
+    padding: 50px;
+    margin-left: 5%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .left-landing-index{
@@ -194,6 +206,7 @@ body{
 
 .landing-title-index{
     padding-bottom: 60px;
+    padding-left: 5%;
     font-size: 70px;
     font-family: var(--title-font);
     color: var(--auxBack-color);
@@ -383,7 +396,7 @@ body{
 
 /* nada mas, anashe */
 
-/* Carrousel section */
+/* INDEX CARROUSEL section */
 
 .gal-section {
     margin-top: 100px;
