@@ -34,7 +34,7 @@ formulario.addEventListener('submit', function(e){
 
     /*VALIDACION CAMPO NOMBRE*/
     if((nombre.value.length < 6 || nombre.value.length > 10) || !expresionNombre.test(nombre.value)){
-        errores += `El nombre de usuario no es valido <br>`
+        errores += `El nombre de usuario no es válido <br>`
         validacion=false;
         nombre.classList.add('errorInput');
     }
@@ -78,7 +78,7 @@ formulario.addEventListener('submit', function(e){
 
     if(validacion){
         let cont = document.createElement('p');
-        cont.innerHTML=`Hola! ${nombre.value}, se te envia un mail de confirmacion a ${email.value}`
+        cont.innerHTML=`Hola ${nombre.value}, se te envió un mail de confirmacion a ${email.value}.`
         cont.classList.add('user')
         users.appendChild(cont);
     }
